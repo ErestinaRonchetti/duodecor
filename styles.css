@@ -1,0 +1,318 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@1,300;1,400&display=swap');
+/*-------RESET-------*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;
+}
+
+body{
+    background: url(img/fondo.png);
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 50px;
+}
+.contenedor{
+    background-color: rgba(245, 245, 220, 0.24);
+    max-width: 1100px;
+    margin: auto;
+    padding: 40px;
+    border-radius: 25px;
+    border: 2px solid black;
+}
+
+/*ENCABEZADO*/
+
+.contenedor header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contenedor header .logo-titulo a{
+    text-decoration: none;
+    color: rgb(150, 150, 126);
+    display: flex;
+    align-items: center;
+}
+.contenedor header .logo-titulo a i{
+    background-color: rgb(150, 150, 126);
+    font-size: 20px;
+    margin-right: 10px;
+}
+.contenedor header .logo-titulo h1{
+    font-size: 24px;
+}
+.contenedor header nav a{
+    text-decoration: none;
+    color: rgb(150, 150, 126);
+    font-weight: bold;
+    padding: 0 10px;
+}
+.contenedor header nav:hover{
+    color: beige;
+}
+.contenedor header .carrito .icono-carrito{
+    display: inline-block;
+    background-color: beige;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    font-size: 12px;
+    text-align: center;
+    line-height: 40px;
+    position: relative;
+}
+.contenedor header .carrito .icono-carrito:hover{
+    background-color: rgb(150, 150, 126);
+}
+.contenedor header .carrito .total-item-carrito{
+    position: absolute;
+    background-color: rgb(150, 150, 126);
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    top: 0;
+    right: 0;
+    line-height: 15px;
+}
+.contenedor-seccion{
+    position: relative;
+}
+.contenedor-seccion .fondo-seccion{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: url(img/fondo.png);
+    background-size: cover;
+    width: 100%;
+    height: 300px;
+    border-radius: 50px;
+    border-radius: 25px;
+    border: 2px solid beige;
+}
+
+/*SECCION INICIO*/
+
+.contenedor-seccion .inicio{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 300px;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.contenedor-seccion .inicio .col{
+    width: 50%;
+}
+.contenedor-seccion .inicio .col .titulo-inicio{
+    line-height: 40px;
+    font-size: 30px;
+    color: rgb(150, 150, 126);
+    margin-bottom: 15px;
+}
+.contenedor-seccion .inicio .col .buscador{
+    width: 80%;
+    margin: auto;
+    background-color: beige;
+    display: flex;
+    align-items: center;
+    border-radius: 30px;
+    overflow: hidden;
+}
+.contenedor-seccion .inicio .col .buscador input{
+    width: 100%;
+    border: none;
+    display: inline-block;
+    padding: 10px;
+    outline: none;
+}
+.contenedor-seccion .inicio .col .buscador span{
+    width: 50px;
+    height: 40px;
+    line-height: 40px;
+    cursor: pointer;
+}
+.contenedor-seccion .inicio .col .buscador span i{
+    padding-right: 10px;
+}
+.contenedor-seccion .inicio .col .buscador span:hover{
+    background-color: rgb(150, 150, 126);
+}
+.contenedor-seccion .inicio .col .contenedor-img{
+    width: 150px;
+    opacity: 0.7;
+}
+
+/* SECCION ENCABEZADO*/
+
+.header-seccion{
+    position: relative;
+    font-size: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 50px;
+}
+.header-seccion .col{
+    width: 30px;
+}
+.header-seccion .link-blanco{
+    color: rgb(150, 150, 126);
+}
+.header-seccion .busqueda{
+    text-align: right;
+    font: 16px;
+}
+.header-seccion .col-busqueda select{
+    font-size: 11px;
+    background-color: rgb(150, 150, 126);
+    border: none;
+    padding: 2px;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+
+/* PRODUCTOS  */
+.productos{
+    position: relative;
+}
+.productos .fila{
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 30px;
+}
+
+.productos .fila .col{
+    width: 190px;
+    padding: 15px;
+    border-radius: 15px;
+    position: relative;
+}
+
+.productos .fila .col .like,
+.productos .fila .col .cart{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 1px solid rgb(150, 150, 126);
+    text-align: center;
+    cursor: pointer;
+    line-height: 30px;
+    font-size: 12px;
+    transition: .3s;
+}
+.productos .fila .col .like:hover,
+.productos .fila .col .cart:hover{
+    background-color: rgb(150, 150, 126);
+}
+
+.fondo-dots{
+    background-color: beige;
+    border: 1px solid #333;
+}
+
+.productos .fila .col img{
+    width: 80%;
+    display: block;
+    margin: auto;
+    position: relative;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    transition: .3s;
+}
+
+.productos .fila .col .contenido{
+    cursor: pointer;
+}
+.productos .fila .col .contenido:hover img{
+    transform: scale(1.5); 
+    transition: transform 0.3s ease; 
+}
+.productos .fila .col a{
+    text-decoration: none;
+}
+.productos .fila .col h2{
+    font-size: 14px;
+    text-align: center;
+    color: black;
+}
+
+/*SECCION CONTACTO*/ 
+
+.contacto{
+    position: relative;
+    padding: 0 50px;
+}
+.contacto .fila{
+    padding: 50px 40px;
+    background-color: rgb(245, 245, 220);
+    border-radius: 40px;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: inset 0 0 20px 10px rgb(150, 150, 126), 0px 0px 10px 0 beige;
+    border: 1px solid black; 
+}
+
+.contacto .fila .col{
+    width: 50%;
+}
+.contacto .fila .col input,
+.contacto .fila .col textarea{
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    background-color: beige;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+.contacto .fila .derecha{
+    position: relative;
+}
+
+.contacto .fila .derecha h2 {
+    font-size: 30px;
+    color: black;
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: lighter; /* Hace que la fuente sea más fina */
+}
+.contacto .fila .derecha img {
+    max-width: 400px;
+    position: absolute;
+    bottom: -50px; 
+    left: 50%; 
+    transform: translateX(-50%); 
+}
+
+.contacto .fila .col .btn-contacto {
+    background-color: beige;
+    color: black; 
+    padding: 10px 15px; 
+    border: black 1px solid; 
+    border-radius: 5px; 
+    font-size: 12px; 
+    cursor: pointer; 
+    transition: background-color 0.3s ease; 
+}
+
+/*SECCION DETALLE FRASCO #1*/
+
+.detalle-producto{
+    position: relative
+    padding 0 50px;
+}
+.detalle-producto .fila{
+    padding: 50px 40px;
+    background-color: beige;
+    border-radius: 40px;
+    display: flex;
+    justify-content: space-between;
+}
